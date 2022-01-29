@@ -9,8 +9,22 @@ services:
     volumes:
     - ./app:/var/www/html
     - ./configs/nginx:/etc/nginx/conf.d
-    - ./logs/nginx:/var/log/nginx
-
+    - ./logs/nginx:/var/log/nginx#
+#services:
+#  nginx:
+#    image: 'bitnami/nginx:latest'
+#    depends_on:
+#      - phpfpm
+#    networks:
+#      - app-tier
+#    ports:
+#      - 127.0.0.1:80:80
+#      - 443:443
+#    volumes:
+#    - ./app:/var/www/html
+#    - ./configs/nginx:/etc/nginx/conf.d
+#    - ./logs/nginx:/var/log/nginx#
+#
   php-fpm:
     build:
       context: php-fpm

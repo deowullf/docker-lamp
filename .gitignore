@@ -1,6 +1,6 @@
 /.idea/
 /databases/
 /logs/
-/.1597/
-/1597.pub/
+./1597
+./1597.pub/
 /ngrok/
