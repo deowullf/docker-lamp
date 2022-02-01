@@ -1,6 +1,8 @@
 /.idea/
 /databases/
 /logs/
-./1597
-./1597.pub/
-/ngrok/
+.1597
+.1597.pub
+ngrok
+/.vscode/
+.env
